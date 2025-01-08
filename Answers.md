@@ -9,11 +9,14 @@ It will also create complications for our Main class. Not knowing what the type 
 
 1. #### Make a UML diagram showing the inheritance tree (you don't need to be specific) <br>
    Open EmployeeDiagram.png or .jpeg to see diagram
-2. #### Is it possible in this design for an Engineer to also become a Manager?
+2. #### Is it possible in this design for an Engineer to also become a Manager? \
+
+   No. The engineer cannot also be a manager in this scenario. Since engineer already extends another class it is not possible to extend from two classes simultaneously. Singular inheritance is what prevents the double class extension.
+
 3. #### Re-design the classes so that there is only one (concrete) class called Employee.
 
    - _Create a new Class Role which has only a role name as the instance variable and a method for getting the role name and a toString() method (see below)_
-   - _Make an instance variable roles for the Employee as a List<Role>_
+   - _Make an instance variable roles for the Employee as a List "Role"_
    - _Make a constructor which takes name, department and initialRole for the Employee class_
    - _(add the initial role to the list in the constructor)_
      make a method for adding a role
