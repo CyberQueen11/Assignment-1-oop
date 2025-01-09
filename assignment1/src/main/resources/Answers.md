@@ -12,6 +12,3 @@ It will also create complications for our Main class. Not knowing what the type 
 2. #### Is it possible in this design for an Engineer to also become a Manager? \
 
    No. The engineer cannot also be a manager in this scenario. Since engineer already extends another class it is not possible to extend from two classes simultaneously. Singular inheritance is what prevents the double class extension.
-
-3. #### If you want a removeRole(Role) method, how do you have to change the Role class?
-   _hint: to remove an object from a list, the list must be able to find the object, perhaps using equals_
