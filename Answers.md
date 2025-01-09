@@ -19,9 +19,9 @@ It will also create complications for our Main class. Not knowing what the type 
    - _Make an instance variable roles for the Employee as a List "Role"_
    - _Make a constructor which takes name, department and initialRole for the Employee class_
    - _(add the initial role to the list in the constructor)_
-     make a method for adding a role
-   - _Make the toString() implementation so that it creates a String with name, department and [roles]
-     Write a test program which confirms that you can create some employees with initial roles and that adding new roles work_
+   - _Make a method for adding a role_
+   - _Make the toString() implementation so that it creates a String with name, department and [roles]_
+   - _Write a test program which confirms that you can create some employees with initial roles and that adding new roles work_
 
 4. #### If you want a removeRole(Role) method, how do you have to change the Role class?
    _hint: to remove an object from a list, the list must be able to find the object, perhaps using equals_
