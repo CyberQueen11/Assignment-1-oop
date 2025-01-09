@@ -15,12 +15,6 @@ It will also create complications for our Main class. Not knowing what the type 
 
 3. #### Re-design the classes so that there is only one (concrete) class called Employee.
 
-   - _Create a new Class Role which has only a role name as the instance variable and a method for getting the role name and a toString() method (see below)_
-   - _Make an instance variable roles for the Employee as a List "Role"_
-   - _Make a constructor which takes name, department and initialRole for the Employee class_
-   - _(add the initial role to the list in the constructor)_
-   - _Make a method for adding a role_
-   - _Make the toString() implementation so that it creates a String with name, department and [roles]_
    - _Write a test program which confirms that you can create some employees with initial roles and that adding new roles work_
 
 4. #### If you want a removeRole(Role) method, how do you have to change the Role class?
