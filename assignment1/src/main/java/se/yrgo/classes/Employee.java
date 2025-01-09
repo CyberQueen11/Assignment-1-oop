@@ -48,6 +48,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return String.format("%s at %s with roles: %s", name, department, roles.toString());
+        return String.format("%s at %s with roles: %s", name, department, (roles.isEmpty() ? "" : roles.toString()));
     }
 }
