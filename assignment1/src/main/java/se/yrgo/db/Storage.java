@@ -10,8 +10,10 @@ public class Storage {
 
   @SuppressWarnings("unchecked")
   public static List<Person> fetchPersons() {
+
     File f = new File(FILE);
     List<Person> list = new LinkedList<>();
+
     try {
       if (!f.exists()) {
         System.out.println("INFO: Can't find " + FILE);
@@ -23,6 +25,7 @@ public class Storage {
     } catch (Exception e) {
       System.err.println("Could not load address book from " + FILE);
     }
+
     return list;
   }
 
