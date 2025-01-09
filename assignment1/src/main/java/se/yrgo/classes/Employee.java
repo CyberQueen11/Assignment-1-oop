@@ -1,8 +1,9 @@
 package se.yrgo.classes;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Employee {
+public class Employee {
     private String name;
     private String department;
     private Role initialRole;
@@ -16,6 +17,8 @@ public abstract class Employee {
     public Employee(String name, String department, Role initialRole) {
         this(name, department);
         this.initialRole = initialRole;
+
+        this.roles = new ArrayList<>();
         roles.add(initialRole);
     }
 
