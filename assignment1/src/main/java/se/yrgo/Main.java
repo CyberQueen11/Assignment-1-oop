@@ -15,19 +15,21 @@ public class Main {
 
     System.out.println(robot1);
 
-    /*
-     * List<Person> persons;
-     * try {
-     * AddPeople.addPeopleAndSave();
-     * } finally {
-     * persons = Storage.fetchPersons();
-     * if (persons == null || persons.isEmpty()) {
-     * System.out.println("The list you wanted to fetch was empty...");
-     * } else {
-     * System.out.println(persons);
-     * }
-     * }
-     */
+    robot1.removeRole(new Role("Engineer"));
+
+    System.out.println(robot1);
+
+    List<Person> persons;
+    try {
+      AddPeople.addPeopleAndSave();
+    } finally {
+      persons = Storage.fetchPersons();
+      if (persons == null || persons.isEmpty()) {
+        System.out.println("The list you wanted to fetch was empty...");
+      } else {
+        System.out.println(persons);
+      }
+    }
 
   }
 }

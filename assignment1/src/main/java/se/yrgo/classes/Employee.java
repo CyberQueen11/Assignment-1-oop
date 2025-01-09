@@ -34,6 +34,18 @@ public class Employee {
         roles.add(role);
     }
 
+    public void removeRole(Role roleToRemove) {
+        for (Role role : roles) {
+            if (role.equals(roleToRemove)) {
+                this.roles.remove(roleToRemove);
+                System.out.println("The role has been removed");
+                return;
+            }
+        }
+
+        System.out.println("Role wasn't found: " + roleToRemove);
+    }
+
     @Override
     public String toString() {
         return String.format("%s at %s with roles: %s", name, department, roles.toString());
